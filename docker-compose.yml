@@ -1,0 +1,8 @@
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "28017:27017"  # Mapeando porta 28017 do host para 27017 no container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 123
